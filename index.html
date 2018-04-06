@@ -13,23 +13,51 @@
     <h2>Welcome to Moringa Bank</h2>
     <div class="col-md-4">
       <h4>Register new account</h4>
-      <form id="Enter">
+      <form id="Account">
         <label class="col-md-3" for="number">Name:</label>
         <input type="text" name="" class="form-control" id="name" style="background-color: #E6E6FA;">
         <label class="col-md-5" for="number">Initial deposit:</label>
-        <input type="text" name="" class="form-control" id="initialDeposit" style="background-color: #E6E6FA;">
+        <input type="num" name="" class="form-control" id="initialDeposit" style="background-color: #E6E6FA;">
         <button class="btn btn-danger" type="submit">Enter</button>
       </form>
       <h5><strong>Current balance</strong></h5>
     </div>
     <div class="col-md-4">
       <h4>Deposit or Withdraw Funds</h4>
-      <form id="Enter">
+      <form id="amount-change">
         <label class="col-md-5" for="number">Deposit Amount:</label>
         <input type="text" name="" class="form-control" id="deposit" style="background-color: #E6E6FA;">
         <label class="col-md-5" for="number">Withdraw amount:</label>
-        <input type="text" name="" class="form-control" id="withdrawal" style="background-color: #E6E6FA;">
+        <input type="num" name="" class="form-control" id="withdrawal" style="background-color: #E6E6FA;">
+        <button class="btn btn-success" id="deposit">Deposit Amount</button>
+        <button class="btn btn-danger" id="withdraw">Withdraw Amount</button>
       </form>
+    </div>
+  </div>
+  <div class="contianer">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Accounts</h2>
+        <ol id="accounts">
+
+        </ol>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Account Details</h2>
+        <div id="showAccount">
+          <h2></h2>
+          <p>Name:
+            <span class="names"></span>
+          </p>
+          <p>Inital Deposit:
+            <span class="initial"></span>
+          </p>
+          <p>Balance:
+            <span class="balance"></span>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/jquery.js"></script>
